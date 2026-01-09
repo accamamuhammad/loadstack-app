@@ -11,14 +11,13 @@ import Logo from "../../../public/icons/logo.png";
 
 // Icons
 import { IoIosMenu, IoMdClose } from "react-icons/io";
-import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <>
-      <nav className="w-full px-6 py-5 flex items-center justify-between">
+      <nav className="w-full px-6 py-5 flex items-center justify-between border-b border-gray-200">
         <div className="flex items-center gap-3.5">
           {/* Logo */}
           <Image src={Logo} alt="logo" width={35} height={50} />
@@ -28,8 +27,12 @@ const Navbar = () => {
 
           {/* Desktop List */}
           <ul className="pl-2.5 gap-6 hidden lg:flex items-center">
-            <li className='text-[0.9rem] opacity-90 hover:text-indigo-500 cursor-pointer'>Extension</li>
-            <li className='text-[0.9rem] opacity-90 hover:text-indigo-500 cursor-pointer'>Contact Us</li>
+            <li className="text-[0.9rem] opacity-90 hover:text-indigo-500 cursor-pointer">
+              Extension
+            </li>
+            <li className="text-[0.9rem] opacity-90 hover:text-indigo-500 cursor-pointer">
+              Contact Us
+            </li>
           </ul>
         </div>
 
