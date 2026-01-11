@@ -123,7 +123,7 @@ export default function Home() {
                 {selectedStack} - {selectedLevel}
               </h2>
               <p className={`${darkMode ? "text-gray-400" : "text-gray-600"}`}>
-                {extensionData[selectedStack][selectedLevel].length} recommended
+                {(extensionData[selectedStack][selectedLevel as LevelName] as unknown[])?.length || 0} recommended
                 extensions
               </p>
             </div>
