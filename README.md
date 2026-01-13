@@ -1,4 +1,5 @@
-DevOps & Tools (10 stacks)
+# DevOps & Tools (10 stacks)
+
 Docker
 Kubernetes
 Git
@@ -14,7 +15,7 @@ Linux/Bash
 
 ### Error
 
-1. When users want to install the should be a filter for them to pick cause some people already have some extensions installed
+1.
 
 ### Feature
 
