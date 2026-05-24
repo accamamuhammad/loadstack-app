@@ -1,9 +1,15 @@
 import React from "react";
 
+type NextButtonProps = {
+  onClick: () => void;
+};
 
-const button = () => {
+const button = ({ onClick }: NextButtonProps) => {
   return (
-    <button className="text-base text-white px-4 py-2 bg-neutral-800 rounded-full border-[0.5px] border-neutral-200 shadow cursor-pointer hover:bg-neutral-600">
+    <button
+      onClick={onClick}
+      className="text-base text-white px-4 py-2 bg-neutral-800 rounded-full border-[0.5px] border-neutral-200 shadow cursor-pointer hover:bg-neutral-600"
+    >
       Next Step
     </button>
   );
